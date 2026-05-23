@@ -30,6 +30,19 @@ The full runnable example is [`example.capa`](./example.capa);
 it shows decomposition, round-trip through components, ISO 8601
 parsing (success + failure), and a live read from `Clock`.
 
+## Install via capa.toml
+
+```toml
+[dependencies.capa_datetime]
+git = "https://github.com/nelsonduarte/capa_datetime"
+tag = "v0.1.1"
+verify_key = "6C1D222D491FB88031E041A536CFB426101AA24B"
+```
+
+`capa install` runs `git verify-tag` against your GPG keyring;
+import the publisher's key first (see [`SECURITY.md`](SECURITY.md)
+for the fingerprint provenance and `gpg --import` instructions).
+
 ## API surface
 
 ### Types (from `capa_datetime.datetime`)
